@@ -140,6 +140,10 @@ open class KolodaView: UIView, DraggableCardDelegate {
     public var isRunOutOfCards: Bool {
         return visibleCards.isEmpty
     }
+
+    public var firstVisibleCard: DraggableCardView? {
+        get { visibleCards.first }
+    }
     
     // MARK: Private
     
